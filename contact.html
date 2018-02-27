@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="assets/styles/general.css" rel="stylesheet">
+        <title>Nickstabadet</title>
+    </head>
+    
+    <body>
+        
+        <header>
+            <h1>Nickstabadet</h1>
+            <p>Ett soligt sommarbad</p>
+        </header>    
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Hem</a> </li>
+                <li><a class="now" href="contact.html">Kontakt</a> </li>
+                <li><a href="status.html">Väder</a> </li>
+                <li class="tb"><a href="#" onClick="history.go(-1);return true;">Tillbaka</a> </li>
+            </ul>
+        </nav>
+        
+        <main>
+            <section id="forms">
+            <h2>Lämna dina synpunkter här!</h2>
+            
+            <form>
+                <div>
+                <label>Rubrik</label>
+                <input id="under" class="ex" type="text" placeholder="Rubrik"
+                    min="1"
+                    maxlength="30"
+                    required>
+ 
+                </div>
+                
+                <br>
+                
+                <div>
+                <label>
+                    Beskrivningar
+                    <textarea id="under" class="ex" style="resize: none" rows="3" cols="20" form="synpunkter"></textarea>
+                    Max 100 tecken
+                </label>
+                </div>
+                
+                <br>
+                
+                <div>
+                <label>Ärende</label>
+                <select id="under" class="ex">
+                    <option>Strand</option>
+                    <option>Hopptornet</option>
+                    <option>Vattenpark</option>
+                </select>
+                </div>
+                
+                <br>
+                
+                <div class="janej">
+                <label>Vill du få svar på din synpunkt?<br></label>
+                <input name="Remember_me" type="radio" id="remember_yes">
+                <label for="remember_yes">Ja</label>
+
+                <input checked name="Remember_me" type="radio" id="remember_no">
+                <label for="remember_no">Nej</label>    
+                
+                <div class="mail">
+                <label>Skriv in din E-post</label>
+                    <input id="under" class="ex" type="text" placeholder="example@email.com"
+                        min="3"
+                        maxlength="10"
+                        required>
+                </div> 
+                </div>    
+                
+                <button type="submit">Skicka..</button>
+            </form>        
+            </section>   
+        </main>
+        
+        <br>
+        
+        <div>
+        <footer>
+                Vill du veta mer? Skicka e-post till 
+                <a href="mailto:kevin.engvall@gmail.com">
+                kevin.engvall@gmail.com
+                </a>
+        </footer>
+        </div>   
+    
+    </body>
+
+</html>        

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="assets/styles/general.css" rel="stylesheet">
+        <title>Nickstabadet</title>
+    </head>
+    
+    <body>
+        
+        <header>
+            <h1>Nickstabadet</h1>
+            <p>Ett soligt sommarbad</p>
+        </header>    
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Hem</a> </li>
+                <li><a href="contact.html">Kontakt</a> </li>
+                <li><a class="now" href="status.html">Väder</a> </li>
+                <li class="tb"><a href="#" onClick="history.go(-1);return true;">Tillbaka</a> </li>
+            </ul>
+        </nav>
+
+        
+        <main >
+            
+            <section id="weather">
+            <h2>Vädret på Nicksta</h2>
+            
+            <table style="width: 98%">
+                <thead>
+                    <tr>
+                        <th>Klocka</th>
+                        <th>Väder</th>
+                        <th>Värme</th>
+                        <th>Vind</th>
+                    </tr>
+                </thead>
+                <tbody class="weather-data">
+                       
+                </tbody>
+            </table>
+            </section>
+            
+            <section id="travel">
+            <h2>Åker tågen?</h2>
+            <form autocomplete="off">
+                <div>
+                    <label>Jag åker ifrån..</label>
+                    <input id="des" class="under" type="text" placeholder="City"
+                        required>
+                </div>
+                <button type="button" onclick="Table()" >Sök..</button>
+            </form>
+                
+                <button id="ab" class="fetch-data" onclick="Gone()">Vädret..</button>
+
+            <table style="width: 98%">
+                <caption>Åker från:</caption>
+                <thead>
+                    <tr>
+                        <th>Nr</th>
+                        <th>Avgår</th>
+                        <th>Ankommer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="darker">
+                        <td>53</td>
+                        <td>16:10</td>
+                        <td>16:22</td>
+                    </tr>
+                    <tr>
+                        <td>69</td>
+                        <td>16:30</td>
+                        <td>16:50</td>
+                    </tr>
+                    <tr class="darker">
+                        <td>526</td>
+                        <td>16:44</td>
+                        <td>17:50</td>
+                    </tr>    
+                </tbody>
+            </table>
+            <label id="skoj" style="margin: 15px 0px 20px 20px">Inga problem i trafiken</label>
+            <div id="output" style="margin-top: 20px">Åker från:</div>
+            </section>
+                
+        </main>
+        
+        <br>
+        
+        <footer>
+                Vill du veta mer? Skicka e-post till 
+                <a href="mailto:kevin.engvall@gmail.com">
+                kevin.engvall@gmail.com
+                </a>
+        </footer>   
+    
+        <script src="assets/scripts/domStatus.js"></script>
+        <script src="assets/scripts/weainfo.js"></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,405 @@
+@import url(reset.css);
+
+body {
+    
+    background-color: #e8eaed;
+    
+}
+
+
+header {
+
+    background-image: url(/assets/images/layout/header-sky.jpg);
+    background-size: 1200px;
+    
+}
+
+header h1{
+
+    padding: 20px 0px 0px 20px;
+    color: #242291;
+    font-weight:bold;
+    font-size: 45px;
+             
+} 
+
+header p{
+
+    color: #242291;
+    padding: 10px 0px 20px 20px;
+    font-size: 20px;
+    font-weight:bold;
+           
+}
+
+
+ul {
+    
+    background-color: #404040 ;
+    padding: 10px 0px 10px 0px;
+    
+}
+
+li {
+    
+    display: inline;
+    
+}
+
+li a {
+    
+    color: #F6F6E8;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-family:sans-serif;
+}
+
+li a:hover {
+    
+    background-color: #00ACE9;
+    
+}
+
+.tb {
+    
+    float: right;
+    
+}
+
+.now {
+    
+    background-color: #00ACE9;
+    
+}
+
+#gal {
+    
+    background-color: #ffffff;   
+    margin: 20px 40px 10px 5px;
+    border: 2px;
+    border-color: lightblue;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 20px;
+    float: right;
+    width: 200px;
+    box-shadow: 5px 10px 10px #497479; 
+    
+}
+
+@media only screen and (max-width: 1210px) {
+    
+    #gal {
+        
+        float: left;
+        width: 70%;
+        margin: 40px 3% 10px 30px;
+        
+    }
+  
+}
+
+#gal h2 {
+    
+    color: #6A9A1F;
+    font-family:sans-serif; 
+    font-size: 25px;
+    font-weight:800;
+    text-align: center;
+    
+}
+
+#gal figure {
+    
+    text-align: center;
+    margin: 10px;
+        
+}
+
+#gal figure img {
+    
+    margin: 4px;
+    border: 3px;
+    border-color: black;
+    border-style: solid; 
+    
+}
+
+#nick {
+    
+    background-color: #ffffff;
+    margin: 40px 5px 40px 40px;
+    border: 2px;
+    border-color: lightblue;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 10px;
+    width: 70%;
+    float: left;
+    box-shadow: 5px 10px 10px #497479;
+    
+}
+
+#nick h2 {
+    
+    color: #6A9A1F;
+    font-family:sans-serif; 
+    font-size: 25px;
+    font-weight:800;
+    
+}
+
+#nick h3 {
+    
+    color: #6A9A1F;
+    font-family:sans-serif; 
+    font-size: 15px;
+    font-weight:bold;
+    margin-bottom: 8px;
+    
+}
+
+#nick figure {
+    
+    float:left;
+        
+}
+
+#nick figure figcaption {
+    
+    text-align: center;
+        
+}
+
+#nick aside {
+    
+    margin: 10px;
+    border: 2px;
+    border-color: lightblue;
+    border-style: solid;
+    padding: 10px;
+    width: 65%;
+    display: inline-block;
+          
+}
+
+#forms {
+    
+    background-color: white;
+    margin: 40px 25% 40px 25%;
+    border: 2px;
+    border-color: lightblue;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 10px;
+    width: 50%;
+    float: left;
+    box-shadow: 5px 10px 10px #497479;
+    
+}
+
+#forms form {
+    
+    float: left;
+    width: 100%;
+    
+}
+
+#forms h2 {
+    
+    color: #6A9A1F;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: sans-serif;
+    
+}
+
+#weather {
+    
+    margin: 40px 3% 40px 5px;
+    border: 2px;
+    border-color: lightblue;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 10px;
+    float: right;
+    box-shadow: 5px 10px 10px #497479;
+    
+}
+
+@media only screen and (max-width: 1200px) {
+    #weather {
+        
+        float: left;
+        width: 62%;
+        margin: 40px 3% 10px 3%;
+        
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #weather {
+        
+        width: 320px;
+        
+    }
+}
+
+#weather h2 {
+    
+    color: #6A9A1F;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 5px;
+    
+}
+
+table {
+    
+    margin-bottom: 15px;
+    
+}
+
+table thead tr th {
+    
+    color: white;
+    background-color: purple;
+    padding: 10px 20px 10px 20px;
+
+}
+
+table tbody tr td {
+    
+    padding: 10px;
+    
+}
+
+table tfoot tr td {
+    
+    padding: 10px;
+    
+}
+
+table caption{
+    
+    display: none;
+    
+}
+
+.darker {
+    
+    background-color: lightgray;
+    
+}
+
+#travel {
+    
+    margin: 40px 5px 40px 5%;
+    border: 2px;
+    border-color: lightblue;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 10px;
+    width: 60%;
+    min-width: 280px;
+    float: left;
+    box-shadow: 5px 10px 10px #497479;
+    
+}
+
+#travel h2 {
+    
+    color: #6A9A1F;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 5px;
+    
+}
+
+div {
+    
+    margin-top: 10px;
+    
+}
+
+.mail {
+    
+    margin-top: 20px;
+    display: none;
+    
+}
+
+#remember_no:checked ~ .mail{
+  display:none;
+}
+
+#remember_yes:checked ~ .mail{
+   display:block;
+}
+
+div.janej {
+    
+    margin-bottom: 15px;
+    
+}
+
+button {
+    
+    margin: 10px 5px 10px 5px;
+    color: white;
+    background-color:orangered;
+    width: 70px;
+    height: 30px;
+    font-family:serif;
+        
+}
+
+.under {
+
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    
+    
+}
+
+.ex {
+    
+    width: 95%;
+    
+}
+
+article {
+    
+    margin: 20px;
+    
+}
+
+main {
+    
+    float: left;
+    width: 100%;
+    margin-bottom: 40px;
+    
+}
+
+footer {
+    
+    text-align: center;
+    margin-bottom: 0px;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    border: 2px;
+    border-color: lightblue;
+    border-style: solid;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 0px 10px 2px #497479;
+     
+    
+}
