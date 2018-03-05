@@ -9,7 +9,7 @@ body {
 
 header {
 
-    background-image: url(/assets/images/layout/header-sky.jpg);
+    background-image: url(../assets/images/layout/header-sky.jpg);
     background-size: 1200px;
     
 }

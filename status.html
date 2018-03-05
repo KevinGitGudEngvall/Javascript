@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link href="assets/styles/general.css" rel="stylesheet">
+        <link href="styles/general.css" rel="stylesheet">
         <title>Nickstabadet</title>
     </head>
     
@@ -53,12 +53,12 @@
                     <input id="des" class="under" type="text" placeholder="City"
                         required>
                 </div>
-                <button type="button" onclick="Table()" >Sök..</button>
+                <button type="button" onclick="Table();Show()" >Sök..</button>
             </form>
                 
                 <button id="ab" class="fetch-data" onclick="Gone()">Vädret..</button>
 
-            <table style="width: 98%">
+            <table id="fillInfo" style="width: 98%">
                 <caption>Åker från:</caption>
                 <thead>
                     <tr>
@@ -69,19 +69,19 @@
                 </thead>
                 <tbody>
                     <tr class="darker">
-                        <td>53</td>
-                        <td>16:10</td>
-                        <td>16:22</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                     </tr>
                     <tr>
-                        <td>69</td>
-                        <td>16:30</td>
-                        <td>16:50</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                     </tr>
                     <tr class="darker">
-                        <td>526</td>
-                        <td>16:44</td>
-                        <td>17:50</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                     </tr>    
                 </tbody>
             </table>
