@@ -56,8 +56,7 @@ function find(selector) {
     return new DOMElement(selector);
 }
 
-find(".fetch-data").select(".weather-data").click(event => {
-    console.log("clicked");
+
     fetch(API_URL).proceed(response => {
         //event.selected.innerHTML = response;
         //Om knappen är en formulär knapp bör du anropa preventDefault för att undvika
@@ -73,7 +72,7 @@ find(".fetch-data").select(".weather-data").click(event => {
             console.log(data);
         });*/
 
-        var tbody = event.selected;
+        var tbody = document.querySelector(".weather-data");
         for(var index = 0; index < 5; index++){
             var time = weatherList[index].dt_txt;
             var date = new Date(time);
@@ -98,4 +97,3 @@ find(".fetch-data").select(".weather-data").click(event => {
     });
 
     
-});
